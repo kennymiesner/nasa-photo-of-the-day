@@ -41,6 +41,14 @@
 */
 
 /* Custom Styles */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .featured-image {
-  max-height: 100vh;
+  width: 100%;
 }

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios'
 import { API_KEY } from '../constants'
-import "./App.css";
+import axios from 'axios'
 
-function App() {
+export default function Details(props) {
   // State for the NASA APOD data
-  const [nasaData, setNasaData] = useState(null)
+  const {  }
 
   // Effect hook to handle the API call side effect
   useEffect(() => {
@@ -13,7 +12,7 @@ function App() {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=2021-07-09`)
     .then(res => {
       console.log(res.data)
-      setNasaData(res.data)
+      setMedia(res.data)
     })
     .catch(err => console.log(err))
   }, [])
@@ -24,15 +23,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p> */}
-      {
-        nasaData &&
-        <>
-        <h2>Date: {nasaData.date}</h2>
-        <img className='featured-image' src={nasaData.hdurl} alt='AR2835: Islands in the Photosphere'/>
-        </>
-      }
+      <img className='featured-image' src='https://apod.nasa.gov/apod/image/2107/LRVBPIX3M82Crop.jpg' alt='AR2835: Islands in the Photosphere'/>
     </div>
   );
 }
-
-export default App;
