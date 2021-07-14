@@ -1,5 +1,5 @@
 /* Original Styles: Unsure what the purpose is */
-/*
+
 .App {
   text-align: center;
 }
@@ -38,9 +38,10 @@
     transform: rotate(360deg);
   }
 }
-*/
+
 
 /* Custom Styles */
+
 .App {
   display: flex;
   justify-content: center;
