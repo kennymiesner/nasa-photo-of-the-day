@@ -71,8 +71,8 @@ _Note: if the photo url is NOT a photo, you will need to learn how to display a 
 
 - [x] Once you have made the call correctly, and logged the data, add the data to the state property you built.
 
-#### Display the Data
-Now is the time to build out your other components. Compose your UI, and then pass the data to your children components via props so you can render it on the DOM.
+**Display the Data**
+- [ ] Now is the time to build out your other components. Compose your UI, and then pass the data to your children components via props so you can render it on the DOM.
 
 #### _MVP Requirements:_
 
