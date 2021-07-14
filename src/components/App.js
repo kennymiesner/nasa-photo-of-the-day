@@ -9,7 +9,7 @@ function App() {
   // Effect hook to handle the API call side effect
   useEffect(() => {
     // API call
-    axios.get(``)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
     .then(res => {
       console.log(res.data)
     })
