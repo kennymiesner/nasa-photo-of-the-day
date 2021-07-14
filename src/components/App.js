@@ -3,8 +3,18 @@ import axios from 'axios'
 import "./App.css";
 
 function App() {
-  // Add state for the NASA APOD data
+  // State for the NASA APOD data
   const [media, setMedia] = useState(null)
+
+  // Effect hook to handle the API call side effect
+  useEffect(() => {
+    // API call
+    axios.get(``)
+    .then(res => {
+      console.log(res.data)
+    })
+    .catch(err => console.log(err))
+  }, [])
 
   return (
     <div className="App">
