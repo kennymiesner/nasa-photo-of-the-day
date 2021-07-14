@@ -1,3 +1,5 @@
+/* Original Styles: Unsure what the purpose is */
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +37,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+
+/* Custom Styles */
+.featured-image {
+  max-height: 100vh;
 }

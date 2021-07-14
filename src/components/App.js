@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
+import { API_KEY } from '../constants'
 import "./App.css";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   // Effect hook to handle the API call side effect
   useEffect(() => {
     // API call
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=2021-07-09`)
     .then(res => {
       console.log(res.data)
       setMedia(res.data)
@@ -19,11 +20,10 @@ function App() {
 
   return (
     <div className="App">
-      <p>
+      {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-      <img className='featured-image' src='https://apod.nasa.gov/apod/image/1203/angrysun_friedman_960.jpg' alt='Image: Angry Sun Erupting'/>
+      </p> */}
     </div>
   );
 }
