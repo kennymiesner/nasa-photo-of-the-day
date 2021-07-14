@@ -23,6 +23,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
+      <img className='featured-image' src='https://apod.nasa.gov/apod/image/1203/angrysun_friedman_960.jpg' alt='Image: Angry Sun Erupting'/>
     </div>
   );
 }
