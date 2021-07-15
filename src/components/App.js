@@ -19,7 +19,24 @@ function App() {
   }, [])
 
   return (
-    <div>Hello World!</div>
+    <header>
+      <div className="container-1920">
+        <div className="logo">
+          <img src="./logo-white.svg" />
+          <h1>Photo of the Day</h1>
+        </div>
+        <div className="photo-info">
+          <div className="photo-title">
+            <h3>Title</h3>
+            <h2>The Dark Tower in Scorpius</h2>
+          </div>
+          <div className="photo-author">
+            <h3>Photographer</h3>
+            <h2>Martin Pugh</h2>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 
   // return (

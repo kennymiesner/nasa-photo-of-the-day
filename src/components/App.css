@@ -42,14 +42,52 @@
 
 /* Custom Styles */
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+html {
+  background: #151515;
 }
 
-.featured-image {
-  width: 100%;
+.container-1920 {
+  background: #151515;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #454545;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #c4c4c4;
+}
+
+.logo h1 {
+  display: inline-block;
+}
+
+.photo-info {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.photo-info h3 {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.photo-author {
+  padding-left: 50px;
 }
