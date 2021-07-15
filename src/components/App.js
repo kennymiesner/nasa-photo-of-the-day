@@ -10,7 +10,7 @@ function App() {
   // Effect hook to handle the API call side effect
   useEffect(() => {
     // API call
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=2021-07-09`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=2021-07-15`)
     .then(res => {
       console.log(res.data)
       setNasaData(res.data)
@@ -19,16 +19,20 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      {
-        nasaData &&
-        <>
-        <h2>Date: {nasaData.date}</h2>
-        <img className='featured-image' src={nasaData.hdurl} alt='AR2835: Islands in the Photosphere'/>
-        </>
-      }
-    </div>
+    <div>Hello World!</div>
   );
+
+  // return (
+  //   <div className="App">
+  //     {
+  //       nasaData &&
+  //       <>
+  //       <h2>Date: {nasaData.date}</h2>
+  //       <img className='featured-image' src={nasaData.hdurl} alt='AR2835: Islands in the Photosphere'/>
+  //       </>
+  //     }
+  //   </div>
+  // );
 }
 
 export default App;
