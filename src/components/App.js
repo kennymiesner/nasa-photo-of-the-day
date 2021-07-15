@@ -19,6 +19,7 @@ function App() {
   }, [])
 
   return (
+    <>
     <header>
       <div className="container-1920">
         <div className="logo">
@@ -37,6 +38,8 @@ function App() {
         </div>
       </div>
     </header>
+    <section className="featured-image"></section>
+    </>
   );
 
   // return (
